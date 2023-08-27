@@ -1,0 +1,17 @@
+ [package]
+name = "age-plugin-simplepq"
+description = "Simple Post-Quantum plugin for age clients based on ML-KEM."
+version = "0.1.0"
+authors = ["Thibault Meunier <crates@thibault.uk>"]
+edition = "2021"
+readme = "./README.md"
+homepage = "https://github.com/thibmeu/age-plugin-simplepq"
+repository = "https://github.com/thibmeu/age-plugin-simplepq"
+keywords = ["post-quantum", "age", "cli", "cryptography", "encryption"]
+categories = ["command-line-utilities", "cryptography"]
+license = "MIT"
+
+[dependencies]
+age-plugin-hpke = { version = "0.1.0", git = "https://github.com/thibmeu/age-plugin-hpke.git" }
+anyhow = "1.0.75"
+clap = "4.4.0"
