@@ -1,7 +1,6 @@
-
-use age_plugin_hpke::agile::{KemAlg, AeadAlg};
+use age_plugin_hpke::agile::{AeadAlg, KemAlg};
 use anyhow::{anyhow, Result};
-use std::{io, fs};
+use std::{fs, io};
 
 mod cli;
 

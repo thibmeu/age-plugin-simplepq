@@ -7,7 +7,7 @@
 [Crates.io]: https://crates.io/crates/age-plugin-simplepq
 [Documentation]: https://docs.rs/age-plugin-simplepq/
 
-age-plugin-simplepq is a plugin for [age](https://github.com/C2SP/C2SP/blob/main/age.md). It provides an age Identity and Recipient consuming Kyber768Draft00 encoded files.
+age-plugin-simplepq is a plugin for [age](https://github.com/C2SP/C2SP/blob/main/age.md). It provides an age Identity and Recipient consuming X25519Kyber768Draft00 encoded files.
 
 age-plugin are defined by [C2SP](https://github.com/C2SP/C2SP/blob/main/age.md).
 
@@ -22,7 +22,7 @@ age-plugin are defined by [C2SP](https://github.com/C2SP/C2SP/blob/main/age.md).
 
 ## Features
 
-* Post Quantum recipients and identities with Kyber Draft00
+* Post Quantum recipients and identities with X25519Kyber768Draft00
 * Plugin cli for age
 * Cross platform (Linux, Windows, macOS)
 
@@ -61,7 +61,7 @@ age-plugin-simplepq -o my_id.key my_id.key
 
 > The recipient and identity size are going to be large.
 
-### HPKE Encryption
+### Encrypt and decrypt
 
 Encrypt `Hello age-plugin-simplepq!` string with your new key.
 
@@ -73,7 +73,7 @@ Hello age-plugin-simplepq!
 
 ## Security Considerations
 
-This software has not been audited. Please use at your sole discretion. With this in mind, dee security relies on the following:
+This software has not been audited. Please use at your sole discretion. With this in mind, age-plugin-simplepq security relies on the following:
 
 * [age](https://github.com/C2SP/C2SP/blob/main/age.md) encryption protocol, and its implementation in [str4d/rage](https://github.com/str4d/rage),
 * [HPKE RFC 9180](https://www.rfc-editor.org/rfc/rfc9180.html) by R. Barnes, K. Bhargavan, B. Lipp, C. Wood, its implementation in [rozbb/rust-hpke](https://github.com/rozbb/rust-hpke),and its binding for age [age-plugin-hpke](https://github.com/thibmeu/age-plugin-hpke) ,
