@@ -32,9 +32,9 @@ age-plugin are defined by [C2SP](https://github.com/C2SP/C2SP/blob/main/age.md).
 
 ## Installation
 
-| Environment        | CLI Command               |
-|:-------------------|:--------------------------|
-| Cargo (Rust 1.67+) | ```cargo install --git https://github.com/thibmeu/age-plugin-simplepq``` |
+| Environment        | CLI Command                         |
+|:-------------------|:------------------------------------|
+| Cargo (Rust 1.67+) | `cargo install age-plugin-simplepq` |
 
 Read [age installation instructions](https://github.com/FiloSottile/age#installation) to install age.
 

@@ -12,6 +12,6 @@ categories = ["command-line-utilities", "cryptography"]
 license = "MIT"
 
 [dependencies]
-age-plugin-hpke = { version = "0.1.0", git = "https://github.com/thibmeu/age-plugin-hpke.git" }
+age-plugin-hpke = "0.1.0"
 anyhow = "1.0.75"
 clap = "4.4.0"
