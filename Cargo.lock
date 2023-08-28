@@ -97,9 +97,9 @@ dependencies = [
 
 [[package]]
 name = "age-plugin-hpke"
-version = "0.1.1"
+version = "0.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e5e4a97df407d83056e89092fe5fc8e38cdf630ccf43d808c07b150744d18bd5"
+checksum = "6d2bdb9d066d9d75fbf88f751d56b2bf8ac20535985e3483d8c95aefe7b8c8d1"
 dependencies = [
  "age",
  "age-core",
@@ -116,7 +116,7 @@ dependencies = [
 
 [[package]]
 name = "age-plugin-simplepq"
-version = "0.1.1"
+version = "0.1.2"
 dependencies = [
  "age-plugin-hpke",
  "anyhow",
