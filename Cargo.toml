@@ -12,6 +12,6 @@ categories = ["command-line-utilities", "cryptography"]
 license = "MIT"
 
 [dependencies]
-age-plugin-hpke = "0.1.0"
+age-plugin-hpke = "0.1.1"
 anyhow = "1.0.75"
 clap = "4.4.0"

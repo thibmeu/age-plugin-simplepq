@@ -44,7 +44,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6d55a4d912c80a92762ffd1c884065f3f9646467d22c95390e824a0ff7def472"
 dependencies = [
  "age-core",
- "base64",
+ "base64 0.13.1",
  "bech32",
  "chacha20poly1305",
  "cookie-factory",
@@ -71,7 +71,7 @@ version = "0.9.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e3d2e815ac879dc23c1139e720d21c6cd4d1276345c772587285d965a69b8f32"
 dependencies = [
- "base64",
+ "base64 0.13.1",
  "chacha20poly1305",
  "cookie-factory",
  "hkdf",
@@ -90,26 +90,27 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "4564b93d746fc5947e08ee2b9b3f990df89133803857b6ee0dad8b0efeb8bc79"
 dependencies = [
  "age-core",
- "base64",
+ "base64 0.13.1",
  "bech32",
  "chrono",
 ]
 
 [[package]]
 name = "age-plugin-hpke"
-version = "0.1.0"
-source = "git+https://github.com/thibmeu/age-plugin-hpke.git#74ddf0cede2bdf4d911210cf0de2de7a27a47626"
+version = "0.1.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e5e4a97df407d83056e89092fe5fc8e38cdf630ccf43d808c07b150744d18bd5"
 dependencies = [
  "age",
  "age-core",
  "age-plugin",
+ "base64 0.21.3",
  "bech32",
  "bincode",
  "chrono",
  "clap",
  "clap-verbosity-flag",
- "hex",
- "hpke",
+ "hpke_pq",
  "rand 0.8.5",
 ]
 
@@ -214,6 +215,12 @@ name = "base64"
 version = "0.13.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "9e1b586273c5702936fe7b7d6896644d8be71e6314cfe09d3167c95f712589e8"
+
+[[package]]
+name = "base64"
+version = "0.21.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "414dcefbc63d77c526a76b3afcf6fbb9b5e2791c19c3aa2297733208750c6e53"
 
 [[package]]
 name = "bech32"
@@ -703,12 +710,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "95505c38b4572b2d910cecb0281560f54b440a19336cbbcb27bf6ce6adc6f5a8"
 
 [[package]]
-name = "hex"
-version = "0.4.3"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7f24254aa9a54b5c858eaee2f5bccdb46aaf0e486a595ed5fd8f86ba55232a70"
-
-[[package]]
 name = "hkdf"
 version = "0.12.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -727,9 +728,10 @@ dependencies = [
 ]
 
 [[package]]
-name = "hpke"
-version = "0.10.0"
-source = "git+https://github.com/rozbb/rust-hpke.git?branch=unstable-pq-xyber#e519560ce3dcc1818474a8b030b2b96458f5c25a"
+name = "hpke_pq"
+version = "0.10.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f36f34ac58102ab87bfd4728ce3764bdddf2c81e0090db275a395ac0fe138a87"
 dependencies = [
  "aead",
  "aes-gcm",
@@ -1258,8 +1260,9 @@ dependencies = [
 
 [[package]]
 name = "safe_pqc_kyber"
-version = "0.6.0"
-source = "git+https://github.com/bwesterb/argyle-kyber#a22715936522c3d11bc5f1c6455612f681209855"
+version = "0.6.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6b7948051d0228a099b35133c9e96c7ac70ed173f3c7ce5ca58ff93bf5d36615"
 dependencies = [
  "rand_core 0.6.4",
 ]

@@ -56,7 +56,7 @@ age-plugin-simplepq -o my_id.key
 For convenience, you can also create an associated recipient
 
 ```shell
-age-plugin-simplepq -o my_id.key my_id.key
+age-plugin-simplepq -y -o my_id.key my_id.key
 ```
 
 > The recipient and identity size are going to be large.
@@ -66,7 +66,7 @@ age-plugin-simplepq -o my_id.key my_id.key
 Encrypt `Hello age-plugin-simplepq!` string with your new key.
 
 ```shell
-echo "Hello age-plugin-simplepq!" | age -a -R my_id.key.pub > data.age
+echo 'Hello age-plugin-simplepq!' | age -a -R my_id.key.pub > data.age
 age --decrypt -i my_id.key data.age
 Hello age-plugin-simplepq!
 ```
